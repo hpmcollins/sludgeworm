@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[]) {
 	char sludgeworm[150] = "alacritty --command nvim ";
-	strcat(sludgeworm, argv[1]);
+	strcat_s(sludgeworm, sizeof(sludgeworm), argv[1]);
 	system(sludgeworm);
 	return 0;
 }

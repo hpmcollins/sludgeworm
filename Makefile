@@ -1,5 +1,8 @@
 all:
-	gcc main.c -o swrm.exe
-
+	windres app.rc -O coff -o app.o
+	gcc main.c app.o -o swrm.exe -mwindows
 elongated:
-	gcc main.c -o sludgeworm.exe
+	windres app.rc -O coff -o app.o
+	gcc main.c app.o -o sludgeworm.exe -mwindows
+resmaker:
+	windres app.rc -O coff -o app.o

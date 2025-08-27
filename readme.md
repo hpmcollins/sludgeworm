@@ -16,5 +16,5 @@ O - Orange\
 R - Red\
 M - Manager-That-Redirects-To-Neovim-With-Alacritty
 ## build requirements
-gcc and make\
+gcc + make + windres\
 you get what you get and you DONT GET UPSET... 🤬
